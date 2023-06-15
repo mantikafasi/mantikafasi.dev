@@ -1,3 +1,7 @@
+body {
+    padding: 8px;
+}
+
 .centerized-items {
     margin-top: 2rem;
     display: flex;
@@ -42,6 +46,8 @@
 .link-card-grid {
     display: grid;
     grid-gap: 1rem;
+    justify-content: center;
+    padding: 0;
     width: 80%;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
@@ -52,6 +58,7 @@
 
 h1 {
     margin-bottom: 2rem;
+    text-align: center;
 }
 
 footer {
