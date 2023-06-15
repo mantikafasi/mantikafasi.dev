@@ -1,0 +1,63 @@
+.centerized-items {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.center-text {
+    text-align: center;
+}
+
+.discord-widget {
+    width: 340px; 
+    height: 192px; 
+    transform: scale(1.5); 
+    transform-origin: top left;
+}
+
+.discord-iframe-container {
+    width: 510px; 
+    height: 288px; 
+    margin-bottom: 1rem;
+    cursor: pointer;
+    flex-wrap: wrap;
+      justify-content: center;
+    overflow: hidden;
+}
+
+@media (max-width: 768px) {
+    .discord-iframe-container {
+        width: 340px; 
+        height: 192px; 
+    }
+
+    .discord-widget {
+        transform: scale(1); 
+    }
+}
+  
+
+.link-card-grid {
+    display: grid;
+    grid-gap: 1rem;
+    width: 80%;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.introduction {
+    font-size: 1.2rem;
+}
+
+h1 {
+    margin-bottom: 2rem;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}

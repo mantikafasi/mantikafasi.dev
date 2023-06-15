@@ -1,0 +1,53 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Card from '../components/Card.astro';
+import "../styles/style.css";
+---
+
+<Layout title="Manti's website">
+	<div class="centerized-items">
+		<h1>Hello, Welcome to my website</h1>
+		<div class="discord-iframe-container">
+			<iframe class="discord-widget" title="User Embed" src="https://widgets.vendicated.dev/user?id=287555395151593473&amp;theme=dark&amp;banner=true&amp;full-banner=true&amp;rounded-corners=false&amp;discord-icon=true"></iframe>
+		</div>
+
+		<p class="introduction center-text">
+			I am a random hobbyist programmer which does all kinds of random stuff as I get bored
+			<br><br>
+			<strong class="introduction">Here are some stuff I made!</strong>
+		</p>
+
+		<ul role="list" class="link-card-grid">
+			<Card
+				href="https://reviewdb.mantikafasi.dev"
+				title="ReviewDB"
+				body="A discord/twitter plugin lets you leave reviews on peoples profiles"
+			/>
+			<Card 
+				href='https://github.com/mantikafasi/MLock'
+				title='MLock'
+				body='A simple windows locking app with usb/mobile app unlock support'
+			/>
+			<Card
+				href="https://github.com/mantikafasi/AliucordPlugins"
+				title="Aliucord Plugins"
+				body="My plugins for discord android client mod Aliucord."
+			/>
+			<Card
+				href='https://dowhatintime.com'
+				title='DoWhatInTime'
+				body='A website shows you silly things you can do in a given time'
+			/>
+			<Card 
+				href='https://github.com/mantikafasi/RuleGifCreator'
+				title='RuleGifCreator'
+				body='A discord bot creates goku rule gifs'
+			/>
+			<Card 
+				href='https://github.com/mantikafasi/VoteBan-Discord-Bot'
+				title='VoteBan Discord Bot'
+				body='A discord bot lets you voteban people'
+			/>
+		</ul>
+	</div>
+</Layout>
