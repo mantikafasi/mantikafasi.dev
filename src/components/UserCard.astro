@@ -1,0 +1,50 @@
+---
+export interface Props {
+	title: string;
+	image: string;
+	href: string;
+    body: string;
+}
+
+const {href, title, image, body} = Astro.props;
+---
+
+<article class="link-card">
+	<a href={href} class="social-link">
+        <img class="social-image" src={image} alt={title} />
+		<h2 class="social-header">
+			{title}
+		</h2>
+	</a>
+
+    <br />
+    <p>
+        {body}
+    </p>
+
+</article>
+
+<style>
+    .link-card {
+        margin: 0;
+        display: inline;
+    }
+    .social-image {
+        display: inline;
+        width: 48px;
+        height: 48px;
+        border-radius: 50%;
+    }
+
+    .social-link {
+        display: flex;
+        align-items: center;
+    }
+
+    .social-header {
+        display: inline;
+        border: unset;
+        margin: unset;
+        margin-left: 1rem;
+    }
+</style>

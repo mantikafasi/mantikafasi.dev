@@ -1,0 +1,71 @@
+---
+import Layout from "../layouts/Layout.astro";
+import "../styles/style.css";
+import UserCard from "../components/UserCard.astro";
+---
+
+<Layout title="Manti's website">
+  <div class="centerized-items">
+    <h1>Hello, Welcome to my website</h1>
+    <div class="discord-iframe-container">
+      <iframe
+        class="discord-widget"
+        title="User Embed"
+        src="https://widgets.vendicated.dev/user?id=287555395151593473&theme=dark&banner=true&full-banner=true&rounded-corners=false&discord-icon=true"
+      ></iframe>
+    </div>
+
+    <p class="introduction center-text">
+      <strong class="introduction">Here are some weird people I know!</strong>
+    </p>
+
+    <ul role="list" class="link-card-grid">
+      <UserCard
+        href="https://vendicated.dev/en/"
+        title="Vendicated"
+        image="https://avatars.githubusercontent.com/u/45497981?v=4"
+        body="Weird guy who made vencord. Whenever I message him he usually 'husk's my messages, it became a read indicator at this point. He's extremely lazy, you will rarely see him working on something. Sadly plays overwatch. He also didnt merge my PR from 2022 December (its been more than 1.5 years)"
+      />
+      <UserCard
+        href="https://mugman.tech"
+        title="Mugman"
+        image="/profile_photos/mugman.webp"
+        body="A seeming interesting person who likes to log everything he does into my DM's, has lots of free time and complains about it all day. This free time sometimes causes him to get great ideas. He's writing me about creating a location map from discord data rn."
+      />
+
+      <UserCard
+        href="https://aagaming.me"
+        title="AAGaming"
+        image="/profile_photos/nathaniel b.png"
+        body="Linux obessed person. Was a gentoo user before now got rotten with NixOs. Edits his NixOs setup few hours a day(it probably breaks everyday). Decky contributor but didnt bother to add (W)indows support. Has Oculus Quest 2 but he hasnt played with it much except bricking it 2 times."
+      />
+
+      <UserCard
+        href="https://nurmarv.in"
+        title="Marvin"
+        image="/profile_photos/marvin.png"
+        body="I still dont know who that person is, sometimes talks in Vencord. Owns Discord Previews. Sometimes appears in Vencord chat with new Discord bug he found and occupies the rules channel and causes everyone to mention him and ask what he's doing."
+      />
+      <UserCard
+        href="https://dolfi.es"
+        title="Dolfies"
+        image="/profile_photos/dolfies.webp"
+        body="Possible member of Discord staff. Probably knows Discord codebase better than Discord devs. He is very nice person, but when he's in specific discord channels his personality changes fully and turns into weird creature (I still cant believe it)"
+      />
+
+      <UserCard
+        href="https://zt64.dev"
+        title="zeet"
+        image="/profile_photos/zt.webp"
+        body="Old Aliucord plugin developer. Creator of the Aliucord language which consists of several words like 'nop', 'yop', 'explode'. He's also husk master, which means he husks every single message he sees. Sometimes DM's me saying 'hi' and then leaves the chat. Wrote his website in kotlin compose causing it to be enourmous."
+      />
+
+      <UserCard
+        href="https://xinto.dev/"
+        title="Xinto"
+        image="/profile_photos/xinto.webp"
+        body="Old kotlin extremist. He likes to do everything in kotlin and tried to make a discord client with it, due to his laziness and the horrendeus codebase he created; he gave up. Later he switched into hackintosh and now he's a swift extremist."
+      />
+    </ul>
+  </div>
+</Layout>
